@@ -1,0 +1,68 @@
+// CALATK version ?.?; JSON configuration file
+
+
+{
+	"GeneralRegistrationSettings" :
+	{
+		"Kernel" : "HelmholtzKernel",
+		"Metric" : "SSD"
+	},
+	"HelmholtzKernel" :
+	{
+		"Alpha" : 0.01,
+		"Gamma" : 1.0
+	},
+	"MultiScaleBlurHighestResolutionImage" : false,
+	"MultiScaleFinalOutput" :
+	{
+		"OutputStateInformation" : false,
+		"OutputStateInformationFrequency" : 100
+	},
+	"MultiScaleSigmaInVoxels" : 0.50,
+	"MultiScaleSettings" :
+	[
+
+		{
+			"Downsample" :
+			{
+				"Scale" : 1
+			},
+			"LineSearch" :
+			{
+
+				"MaxNumberOfIterations" : 15,
+				"MaxNumberOfTries" : 10,
+				"DecreaseConstant" : 1.0e-04,
+				"MinDisplacementAllowed" : 0.02,
+
+				"AdjustStepSizeDownFactor" : 0.50,
+				"AdjustStepSizeDownNumber" : 2,
+				"AdjustStepSizeUpFactor" : 2.0,
+				"AdjustStepSizeUpNumber" : 2,
+				"InitialStepSize" : 1.0e-02,
+				"MinAllowedStepSize" : 0.00015,
+				"ReductionFactor" : 0.50,
+				"OutputStateInformation" : false,
+				"OutputStateInformationFrequency" : 100
+			}
+		}
+	],
+	"ObjectiveFunction" :
+	{
+		"EnergyWeight" : 1.0,
+		"SigmaSqr" : 0.01
+	},
+	"OneStepEvolver" :
+	{
+		"NumberOfThreads" : 1
+	},
+	"OneStepEvolverSemiLagrangianAdvection" :
+	{
+		"NumberOfIterationsToDetermineFlowField" : 2,
+		"TimeStepFactor" : 1.0
+	},
+	"SpatioTemporalVelocityField" :
+	{
+		"NumberOfDiscretizationVolumesPerUnitTime" : 10.0
+	}
+}
