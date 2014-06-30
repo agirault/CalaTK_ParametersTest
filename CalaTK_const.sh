@@ -10,9 +10,9 @@ purple='\e[1;35m'
 NC='\e[0m' # No Color
 
 #### SOURCES
-source_f="src/cube.nhdr"
-target_f="src/sphere.nhdr"
-config_f="src/config.json"
+source_f="Examples/cube3D.nhdr"
+target_f="Examples/sphere3D.nhdr"
+config_f="Examples/ConfigExample.json"
 
 #### INIT
 #Alpha
